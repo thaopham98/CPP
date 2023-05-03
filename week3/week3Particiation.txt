@@ -1,0 +1,30 @@
+CALL serviceType with serviceCode and accountNumber
+	IF regular service THEN
+		OBTAIN minutes
+		COMPUTE regular amount due 
+		
+		PRINT account number
+		PRINT service type
+		PRINT amount due
+	ELSEIF premium service THEN
+		OBTAIN minutes of daytime and nighttime
+		COMPUTE premium amount due 
+		
+		PRINT account number
+		PRINT service type
+		PRINT amount due
+	ELSE 
+		EXCEPTION THROWN
+	ENDIF
+	
+	
+
+CALL main
+OBTAIN user account number
+OBTAIN type of service
+BEGIN
+	serviceType
+		EXCEPTION
+			WHEN obtaining incorrect input type of service 
+				PRINT invalid input
+	END
