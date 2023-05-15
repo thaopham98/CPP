@@ -1,5 +1,4 @@
-## Requirements. 
-
+## Requirements
 For this portion of the assignment assignment you will implement the EXCEPTION handling techniques covered in Chapter 9. Your application must handle at least three EXCEPTIONs. You will decide how to implement these EXCEPTIONs. Details for submitting your final project are provided below:
 Submit your project using the assignment template
 Include a copy of your completed pseudocode (50pts)  
@@ -56,7 +55,7 @@ For me, creating a console application is not difficult, especially after knowin
 		ENDFOR
 
 	CALL minmax with map cart and char option
-		IF option equals to l
+		IF option equals to l THEN
 			Use min_element() with cart
 			PRINT the pair with smallest value
 		ELSE
@@ -70,7 +69,7 @@ For me, creating a console application is not difficult, especially after knowin
 		OBTAIN index
 		
 		IF the pair with the index does not exist in cart THEN
-	Use insert() to add the pair with the index to cart
+			Use insert() to add the pair with the index to cart
 		ELSE
 			Throw "\nThe item has already been added to the cart.”
 		ENDIF
