@@ -111,27 +111,27 @@ For me, creating a console application is not difficult, especially after knowin
 	Begin
 		WHILE option not equal ‘e’
 			IF option equal ‘s’ THEN
-	IF map cart is not empty THEN
+				IF map cart is not empty THEN
 					CALL sorting
-	WHEN cart is empty
+				WHEN cart is empty
 					“Empty cart”
 			ELSE IF option equal ‘a’ THEN
 				CALL addItem with menu and cart
 			ELSE IF option equal ‘d’ THEN 
-	IF map cart is not empty THEN
+				IF map cart is not empty THEN
 					CALL displayCart(cart)
 					CALL deleteItem with menu and cart
-	WHEN cart is empty
+				WHEN cart is empty
 					“Empty cart”
 			ELSE IF option equal ‘l’ THEN
-	IF map cart is not empty THEN
+				IF map cart is not empty THEN
 					CALL minmax with cart, option
-	WHEN cart is empty
+				WHEN cart is empty
 					“Empty cart”
 			ELSE IF option equal ‘h’ THEN
-	IF map cart is not empty THEN
+				IF map cart is not empty THEN
 					CALL minmax cart, option
-	WHEN cart is empty
+				WHEN cart is empty
 					“Empty cart”
 			Elise IF option equal ‘t’ THEN
 				IF cart is not empty THEN
